@@ -141,8 +141,8 @@ def client_info(cursor, name=None, surname=None, email=None, phone=None):
 if __name__ == '__main__':
     conn = psycopg2.connect(database='clients_db', user='postgres', password='Gloriam11')
     with conn.cursor() as cur:
-        del_table(cur, 'phone_number')
-        del_table(cur, 'client')
+        # del_table(cur, 'phone_number')
+        # del_table(cur, 'client')
         create_client_db(cur)
         add_client(cur, 'Ivan', 'Nikto', 'pochta@po', '98989898, 2123123123')
         add_client(cur, 'Petr', 'Petrov')

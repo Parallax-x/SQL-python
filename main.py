@@ -139,7 +139,7 @@ def client_info(cursor, name=None, surname=None, email=None, phone=None):
 
 
 if __name__ == '__main__':
-    conn = psycopg2.connect(database='clients_db', user='postgres', password='Gloriam11')
+    conn = psycopg2.connect(database='clients_db', user='postgres', password='...')
     with conn.cursor() as cur:
         # del_table(cur, 'phone_number')
         # del_table(cur, 'client')
